@@ -21,5 +21,5 @@
 
 - name: Remove SDK
   win_file:
-    image_path: "{{ win_sdk_dest }}\\{{ win_sdk_iso }}"
+    path: "{{ win_sdk_dest }}\\{{ win_sdk_iso }}"
     state: absent
