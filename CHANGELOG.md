@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mongodb-ansible-roles/ansible-role-orca/compare/v1.0.1...v1.0.2) (2021-03-05)
+
+
+### Bug Fixes
+
+* Specify path, not image_path ([74a7ee8](https://github.com/mongodb-ansible-roles/ansible-role-orca/commit/74a7ee816da05289ee7d93de930c9da797e0b328))
+
 ## [1.0.1](https://github.com/mongodb-ansible-roles/ansible-role-orca/compare/v1.0.0...v1.0.1) (2021-03-05)
 
 
