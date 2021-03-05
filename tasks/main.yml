@@ -6,7 +6,7 @@
 
 - name: Mount ISO
   win_disk_image:
-    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    image_path: "{{ win_sdk_dest }}\\{{ win_sdk_iso }}"
     state: present
 
 - name: Run orca installer
@@ -16,10 +16,10 @@
 
 - name: Unmount ISO
   win_disk_image:
-    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    image_path: "{{ win_sdk_dest }}\\{{ win_sdk_iso }}"
     state: absent
 
 - name: Remove SDK
   win_file:
-    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    image_path: "{{ win_sdk_dest }}\\{{ win_sdk_iso }}"
     state: absent
