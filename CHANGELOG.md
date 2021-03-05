@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mongodb-ansible-roles/ansible-role-orca/compare/v1.0.0...v1.0.1) (2021-03-05)
+
+
+### Bug Fixes
+
+* Escape backslashes ([1f1c063](https://github.com/mongodb-ansible-roles/ansible-role-orca/commit/1f1c063dc38f40d0b42702a0a6afb455dde5ed8c))
+
 # 1.0.0 (2021-03-05)
 
 
