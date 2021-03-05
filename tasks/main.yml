@@ -1,1 +1,25 @@
 ---
+- name: Install Windows 10 SDK
+  win_get_url:
+    url: "{{ win_sdk_url }}"
+    dest: "{{ win_sdk_dest }}"
+
+- name: Mount ISO
+  win_disk_image:
+    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    state: present
+
+- name: Run orca installer
+  win_package:
+    path: "{{ orca_msi }}"
+    state: present
+
+- name: Unmount ISO
+  win_disk_image:
+    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    state: absent
+
+- name: Remove SDK
+  win_file:
+    image_path: "{{ win_sdk_dest }}\{{ win_sdk_iso }}"
+    state: absent

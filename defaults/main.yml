@@ -1,1 +1,5 @@
 ---
+orca_msi: D:\Installers\Orca-x86_en-us.msi
+win_sdk_dest: C:\Users\Administrator
+win_sdk_iso: "19041.685.201201-2105.vb_release_svc_prod1_WindowsSDK.iso"
+win_sdk_url: "https://software-download.microsoft.com/download/pr/{{ win_sdk_iso }}"
